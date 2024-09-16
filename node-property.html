@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <ul id="menu">
+        <li id="first">first</li><li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+    <script>
+        //berisi referensi  ke node lain speerti node perentnya ,node chiledren,node sibling
+
+        //node untuk anaknya yaitu first,second,third
+        const menu = document.getElementById('menu');
+        console.info(menu);
+
+        //chileNode
+        console.info(menu.childNodes);
+
+        //node untuk second aja
+        const second = document.getElementById('second');
+        console.info(second);
+
+        //text content
+        console.info(second.textContent);
+
+        //sibling/sampingnya
+        //sesudahnya
+        console.info(second.nextSibling);//kenapa text karna ada enter setelah dan sebelum second
+        //sebelumnya
+        console.info(second.previousSibling);//kenapa jawabnya first karna gada enter/space jadi bukan $text lagi
+    </script>
+</body>
+</html>l

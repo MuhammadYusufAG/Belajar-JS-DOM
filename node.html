@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+    <script>
+        //node adalah base class dari Document, Element, Attribute
+        //artinya semua fitur dimiliki node dimiliki turunannya
+        //node dalam DOM itu bentuknya adalah tree(pohon),artinya dengan Node, kita bisa melihat 
+        //Perent(node diatasnya), Children( node dibawahnya), Sibling (node disampingnya)
+
+
+        //node untuk anaknya yaitu first,second,third
+        const menu = document.getElementById('menu');
+        console.info(menu);
+
+        //node untuk second aja
+        const second = document.getElementById('second');
+        console.info(second);
+    </script>
+</body>
+</html>
